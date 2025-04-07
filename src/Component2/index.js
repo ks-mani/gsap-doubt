@@ -16,7 +16,6 @@ const Component2 = () => {
   }, []);
 
   useEffect(() => {
-    ScrollTrigger.refresh();
     const ctx = gsap.context(() => {
       const timeline = gsap.timeline({
         defaults: {
@@ -65,6 +64,7 @@ const Component2 = () => {
 
     return () => {
       ctx.revert();
+      ScrollTrigger.refresh();
     };
   }, [someState]);
 
