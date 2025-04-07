@@ -21,4 +21,7 @@ code {
   height: 300px;
   padding: 30px;
   margin: 30px 0;
+  border: 10px solid grey;
+  border-radius: 30px;
+  background-color: rgb(225, 225, 225);
 }

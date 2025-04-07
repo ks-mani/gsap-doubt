@@ -1,12 +1,17 @@
+import "./index.css";
+
 const Component2 = () => {
   return (
     <div
-      className="widget"
+      className="widget component2Wrap"
       style={{
         border: "2px solid red",
       }}
     >
-      Component2
+      <p>Component2</p>
+      <div className="comp2pin">
+        <div className="comp2Anim"></div>
+      </div>
     </div>
   );
 };
