@@ -1,20 +1,20 @@
-.component2Wrap {
+.component4Wrap {
   height: 500px;
   background-color: white;
-  border: 5px solid red;
+  border: 5px solid blue;
 }
 
-.component2Wrap > .comp2pin {
+.component4Wrap > .comp4pin {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 4px solid orange;
+  border: 4px solid forestgreen;
   width: 100%;
   height: 50%;
 }
 
-.component2Wrap > .comp2pin > .comp2Anim {
+.component4Wrap > .comp4pin > .comp4Anim {
   width: 100px;
   height: 100px;
   background-color: aquamarine;
