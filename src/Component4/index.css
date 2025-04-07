@@ -1,21 +1,21 @@
 .component4Wrap {
-  height: 500px;
+  height: auto;
   background-color: white;
   border: 5px solid blue;
 }
 
-.component4Wrap > .comp4pin {
+.comp4pin {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   border: 4px solid forestgreen;
   width: 100%;
-  height: 50%;
 }
 
-.component4Wrap > .comp4pin > .comp4Anim {
+.comp4Anim {
   width: 100px;
   height: 100px;
-  background-color: aquamarine;
+  opacity: 1;
+  background-color: red;
 }

@@ -4,6 +4,7 @@ const Component5 = () => {
       className="widget"
       style={{
         border: "2px solid magenta",
+        height: "1000px",
       }}
     >
       Component5
