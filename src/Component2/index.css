@@ -4,7 +4,7 @@
   border: 5px solid red;
 }
 
-.component2Wrap > .comp2pin {
+.comp2pin {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -14,7 +14,7 @@
   height: 50%;
 }
 
-.component2Wrap > .comp2pin > .comp2Anim {
+.comp2Anim {
   width: 100px;
   height: 100px;
   background-color: aquamarine;
