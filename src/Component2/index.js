@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import "./index.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -6,6 +6,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Component2 = () => {
   const pinnedBoxRef = useRef(null);
   const animBoxRef = useRef(null);
+
+  const [someState, setSomeState] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setSomeState(300);
+    }, 5000);
+  }, []);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -44,7 +52,7 @@ const Component2 = () => {
       timeline
         .to(animBoxRef.current, {
           rotate: 180,
-          x: 200,
+          x: someState,
           scale: 1.9,
         })
         .to(animBoxRef.current, {
@@ -57,7 +65,7 @@ const Component2 = () => {
     return () => {
       ctx.revert();
     };
-  }, []);
+  }, [someState]);
 
   return (
     <div className="widget component2Wrap" id="comp2">
