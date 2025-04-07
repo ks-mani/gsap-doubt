@@ -1,5 +1,14 @@
 const Component3 = () => {
-  return <p>Component3</p>;
+  return (
+    <div
+      className="widget"
+      style={{
+        border: "2px solid blue",
+      }}
+    >
+      Component3
+    </div>
+  );
 };
 
 export default Component3;
