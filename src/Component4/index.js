@@ -3,8 +3,6 @@ import "./index.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Component4 = () => {
   const pinnedBoxRef = useRef(null);
   const animBoxRef = useRef(null);
