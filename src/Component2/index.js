@@ -43,14 +43,16 @@ const Component2 = () => {
 
       timeline
         .to(animBoxRef.current, {
-          rotate: 360,
-          x: 400,
+          rotate: 180,
+          x: 200,
+          scale: 1.9,
         })
         .to(animBoxRef.current, {
           rotate: 720,
           x: -500,
+          scale: 1,
         });
-    }, "#comp4");
+    }, "#comp2");
 
     return () => {
       ctx.revert();
@@ -58,13 +60,13 @@ const Component2 = () => {
   }, []);
 
   return (
-    <div className="widget component2Wrap">
+    <div className="widget component2Wrap" id="comp2">
       <p>
         Component2 : Has Animation.. And GSAP logic get reexecuted on rerender
       </p>
-      <div className="comp2pin">
+      <div className="comp2pin" ref={pinnedBoxRef}>
         <p>Pinned Container</p>
-        <div className="comp2Anim"></div>
+        <div className="comp2Anim" ref={animBoxRef}></div>
       </div>
     </div>
   );
